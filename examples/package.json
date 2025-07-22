@@ -1,0 +1,25 @@
+{
+  "name": "authmefast-examples",
+  "version": "1.0.0",
+  "description": "Exemples d'utilisation d'AuthMeFast",
+  "private": true,
+  "scripts": {
+    "start": "node express-basic.js",
+    "dev": "nodemon express-basic.js",
+    "build-parent": "cd .. && npm run build",
+    "test-api": "node test-api.js",
+    "setup": "npm install && npm run build-parent"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongodb": "^6.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1",
+    "@types/express": "^4.17.20",
+    "@types/mongodb": "^4.0.7"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+} 
